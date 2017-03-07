@@ -49,3 +49,17 @@
 49.	The require function always caches the module it requires. What can you do if you need to execute the code in a required module many times?
 50.	When working with streams, when do you use the pipe function and when do you use events? Can those two methods be combined?
 
+# Extra bonus questions
+1. What will the following print in the browser? What about in node?
+```
+var a = 0;
+
+(function() {
+    this.a = 1;
+    this.b = 2;
+    console.log(a);
+} )();
+
+console.log(a);
+console.log(b);
+```
